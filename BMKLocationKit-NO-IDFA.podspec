@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BMKLocationKit-NO-IDFA"
-  s.version      = "1.0.0"
+  s.version      = "1.3.0"
   s.summary      = "Baidu IOS Location SDK"
 
   # This description is used to generate tags and improve search results.
@@ -77,7 +77,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/lyqaz/BMKLocationKit-NO-IDFA.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/bluesky0109/BMKLocationKit-NO-IDFA.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -120,7 +120,7 @@ Pod::Spec.new do |s|
   s.frameworks = "CoreLocation", "Foundation", "UIKit", "SystemConfiguration","Security", "CoreTelephony"
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
-  s.libraries = "sqlite3.0","stdc++.6.0.9"
+  s.libraries = "sqlite3.0"
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
