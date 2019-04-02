@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BMKLocationKit-NO-IDFA"
-  s.version      = "1.4.0"
+  s.version      = "1.5.0"
   s.summary      = "Baidu IOS Location SDK"
 
   # This description is used to generate tags and improve search results.
@@ -24,6 +24,9 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.description  = <<-DESC
+                   百度地图iOS定位SDK，是百度地图开放平台面向广大iOS端移动应用开发者全新推出的一款定位服务产品。开发者在自己的iOS移动应用中集成定位SDK，可轻松实现获取当前位置信息的功能。百度地图iOS定位SDK以iOS系统定位能力为基础，在此基础之上，面向广大开发者提供了更多丰富功能，包括：地址解析、位置描述、移动热点识别、地理围栏、国内外位置判断等功能。
+                   DESC
 
   s.homepage     = "http://lbsyun.baidu.com/index.php?title=ios-locsdk"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -36,8 +39,8 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  # s.license      = "MIT"
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -50,10 +53,10 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = {  "baidu" => "loc-rd@baidu.com" }
-  # Or just: s.author    = "lyqaz"
-  # s.authors            = { "lyqaz" => "809488029@qq.com" }
-  # s.social_media_url   = "http://twitter.com/lyqaz"
+  s.author             = { "baidu" => "loc-rd@baidu.com" }
+  # Or just: s.author    = "jiangfangsheng"
+  # s.authors            = { "jiangfangsheng" => "jiangfangsheng@baidu.com" }
+  # s.social_media_url   = "http://twitter.com/jiangfangsheng"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -61,8 +64,8 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  # s.platform     = :ios
+  s.platform     = :ios, "7.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -77,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/bluesky0109/BMKLocationKit-NO-IDFA.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/wbcyclist/BMKLocationKit-NO-IDFA.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -115,12 +118,12 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
   s.vendored_frameworks = "framework/*.framework"
-  s.frameworks = "CoreLocation", "Foundation", "UIKit", "SystemConfiguration","Security", "CoreTelephony"
-  # s.library   = "iconv"
-  # s.libraries = "iconv", "xml2"
-  s.libraries = "sqlite3.0"
+  s.frameworks = "CoreLocation", "Foundation", "UIKit", "SystemConfiguration", "Security", "CoreTelephony"
+
+  # s.library   = "sqlite3.0"
+  s.libraries = "sqlite3.0","c++"
+
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
